@@ -17,54 +17,77 @@
 <body>
 
     <div class="container">
-        <form class="form">
-            <div class="form-field">
-                <label for="firstname">First Name</label>
-                <input type="text" class="input required" id="firstname" name="firstname">
-            </div>
-            <div class="form-field">
-                <label for="lastname">Last Name</label>
-                <input type="text" class="input required" id="lastname" name="lastname">
-            </div>
-            <div class="form-field">
-                <label for="email">Email</label>
-                <input type="email" class="input required" id="email" name="email">
-            </div>
-            <div class="form-field">
-                <label for="phone">Phone</label>
-                <input type="text" class="input" id="phone" name="phone">
-            </div>
-            <div class="form-field">
-                <label for="gender">Gender</label>
-                <select name="gender" id="gender" class="required">
-                    <option value="" disabled selected>Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-            <div class="form-field">
-                <label>Please select your age:</label>
-                <div class="input radio_group required" tagName="">
-                    <input type="radio" id="age1" name="age" value="30">
-                    <label for="age1">0 - 30</label><br>
-                    <input type="radio" id="age2" name="age" value="s60">
-                    <label for="age2">31 - 60</label><br>
-                    <input type="radio" id="age3" name="age" value="100">
-                    <label for="age3">61 - 100</label>
+        <div class="form-wrapper">
+            <form class="form">
+                <div class="slide slide-page" id="slide-1">
+                    <div class="form-field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="input required" id="firstname" name="firstname">
+                    </div>
+                    <div class="form-field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="input required" id="lastname" name="lastname">
+                    </div>
+                    <div class="form-field button-group">
+                        <button type="button" class="next-button">Next</button>
+                    </div>
                 </div>
-            </div>
-            <div class="form-field">
-                <label for="photo">Photo</label>
-                <input type="file" name="photo" id="photo" class="required">
-            </div>
-            <div class="form-field">
-                <button type="button" class="submitButton">Submit</button>
-            </div>
-        </form>
+                <div class="slide" id="slide-2">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" class="input required" id="email" name="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="input" id="phone" name="phone">
+                    </div>
+                    <div class="form-field button-group">
+                        <button type="button" class="prev-button">Prev</button>
+                        <button type="button" class="next-button">Next</button>
+                    </div>
+                </div>
+                <div class="slide" id="slide-3">
+                    <div class="form-field">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" class="required">
+                            <option value="" disabled selected>Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Age:</label>
+                        <div class="input radio_group required" tagName="">
+                            <input type="radio" id="age1" name="age" value="30">
+                            <label for="age1">0 - 30</label><br>
+                            <input type="radio" id="age2" name="age" value="s60">
+                            <label for="age2">31 - 60</label><br>
+                            <input type="radio" id="age3" name="age" value="100">
+                            <label for="age3">61 - 100</label>
+                        </div>
+                    </div>
+                    <div class="form-field button-group">
+                        <button type="button" class="prev-button">Prev</button>
+                        <button type="button" class="next-button">Next</button>
+                    </div>
+                </div>
+                <div class="slide" id="slide-4">
+                    <div class="form-field">
+                        <label for="photo">Photo</label>
+                        <input type="file" name="photo" id="photo" class="required">
+                    </div>
+                    <div class="form-field button-group">
+                        <button type="button" class="prev-button">Prev</button>
+                        <button type="button" class="next-button">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
 
-    <script src="./script.js"></script>
+    <script src="./js/validator.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

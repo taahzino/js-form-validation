@@ -7,9 +7,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-}
-
-.container {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -19,18 +16,40 @@ body {
     background-color: #eee;
 }
 
-.container .form {
+.container {
     width: 100%;
-    max-width: 80%;
+    max-width: 500px;
     background: #fff;
-    padding: 1rem;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-wrapper {
+    width: 100%;
+    width: 500px;
+
+}
+
+.container .form {
+    display: flex;
+    overflow: hidden;
+    width: 400%;
+}
+
+.form .slide {
+    width: 25%;
+    transition: margin-left 0.8s ease-in-out;
+}
+
+.slide.show-slide {
+    margin-left: 0;
 }
 
 .form .form-field {
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .form .form-field label {
@@ -55,6 +74,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button-group {
+    width: 50%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.button-group button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: dodgerblue;
+    color: #fff;
+    font-family: Poppins, serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .alert {

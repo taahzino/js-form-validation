@@ -39,11 +39,3 @@ const validator = (formSelector, alertClass, onSuccess) => {
 
   onSuccess(result);
 };
-
-const submitButton = document.querySelector(".submitButton");
-
-submitButton.addEventListener("click", (e) => {
-  validator(".form", "alert", (result) => {
-    console.dir(result);
-  });
-});
